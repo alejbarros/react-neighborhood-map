@@ -22,6 +22,54 @@
   color: #61dafb;
 }
 
+.buttonSpecial {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.buttonSpecial:hover {background-color: #3e8e41}
+
+.buttonSpecial:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.Input-text {
+  display: block;
+  margin: 0;
+  padding: var(--inputPaddingV) var(--inputPaddingH);
+  color: inherit;
+  width: 100%;
+  font-family: inherit;
+  font-size: var(--inputFontSize);
+  font-weight: inherit;
+  line-height: var(--inputLineHeight);
+  border: none;
+  border-radius: 0.4rem;
+  transition: box-shadow var(--transitionDuration);
+}
+
+.Input-text::placeholder {
+  color: #B0BEC5;
+}
+
+.Input-text:focus {
+  outline: none;
+  box-shadow: 0.2rem 0.8rem 1.6rem var(--colorPrimary600);
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
-import LocationItem from './LocationItem';
+import Places from './Places';
+import '../App.css'
 
-class LocationList extends Component {
+class PlacesList extends Component {
     /**
      * Constructor
      */
@@ -60,21 +61,21 @@ class LocationList extends Component {
     render() {
         var locationlist = this.state.locations.map(function (listItem, index) {
             return (
-                <LocationItem key={index} openInfoWindow={this.props.openInfoWindow.bind(this)} data={listItem}/>
+                <Places key={index} openInfoWindow={this.props.openInfoWindow.bind(this)} data={listItem}/>
             );
         }, this);
 
         return (
             <div className="search">
-                <input role="search" aria-labelledby="filter" id="search-field" className="search-field" type="text" placeholder="Filter"
+                <input role="search" aria-labelledby="filter" id="search-fiel" className="Input-text" type="text" placeholder="Filter"
                        value={this.state.query} onChange={this.filterLocations}/>
                 <ul>
                     {this.state.suggestions && locationlist}
                 </ul>
-                <button className="button" onClick={this.toggleSuggestions}>Show/Hide Suggestions</button>
+                <button className="buttonSpecial" onClick={this.toggleSuggestions}>Show/Hide Suggestions</button>
             </div>
         );
     }
 }
 
-export default LocationList;
+export default PlacesList;
