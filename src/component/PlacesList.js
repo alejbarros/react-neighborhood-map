@@ -56,7 +56,7 @@ class PlacesList extends Component {
     }
 
     /**
-     * Render function of LocationList
+     * Render function of PlacesList
      */
     render() {
         var locationlist = this.state.locations.map(function (listItem, index) {

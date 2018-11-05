@@ -2,7 +2,7 @@ import React from 'react';
 
 class Places extends React.Component {
     /**
-     * Render function of LocationItem
+     * Render function of Places
      */
     render() {
         return (

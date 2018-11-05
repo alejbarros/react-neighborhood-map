@@ -192,6 +192,8 @@ function load(src) {
     var script = window.document.createElement("script");
     script.src = src;
     script.async = true;
-  
+    script.onerror = function () {
+        document.write("Google Maps can't be loaded");
+    };
     ref.parentNode.insertBefore(script, ref);
 }
