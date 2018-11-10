@@ -34,6 +34,11 @@ class MapGoogleReact extends React.Component {
       var script = document.createElement('script');
       script.type = 'text/javascript';
       script.src = `https://maps.google.com/maps/api/js?key=AIzaSyCl4GEbbaHZUd9FijWUEeRXQGgHzCBV9Qc`;
+      script.async = true;
+      script.defer = true;
+      script.onerror = function () {
+              document.write("Google Maps can't be loaded");
+      };
       var x = document.getElementsByTagName('script')[0];
       x.parentNode.insertBefore(script, x);
       script.addEventListener('load', e => {
