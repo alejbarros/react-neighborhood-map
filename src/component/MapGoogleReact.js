@@ -57,7 +57,7 @@ class MapGoogleReact extends React.Component {
 
   render() {
     return (
-       <div>
+       <div className="content">
           <BarMap
                 updateQuery={this.updateQuery}
                 query={this.state.query}

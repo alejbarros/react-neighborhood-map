@@ -156,9 +156,30 @@ input::placeholder {
     padding:13px 10px 13px 0;
   }
 }
+
 @media screen and(min-width:1500px){
   .side-nav li{
     padding:17px 10px 17px 0;
+  }
+}
+
+@media (max-width: 1179px) {
+  .side-nav {
+    width: 40%;
+  }
+}
+
+@media (max-width: 679px) {
+  .side-nav {
+    width: 37%;
+  }
+  .side-nav li{
+    font-size:8px;
+  }
+  .buttonSpecial{
+    font-size: 10px;
+    box-shadow: 0 6px #999;
+    border-radius: 12px;    
   }
 }
 
