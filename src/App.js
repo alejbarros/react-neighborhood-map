@@ -97,7 +97,6 @@ class App extends Component {
                close={this.close_info}
                />
             </div>
-
         );
     }
 }
