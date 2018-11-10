@@ -11,5 +11,4 @@ class ItemBarMap extends React.Component {
     }
 }
 
-
 export default ItemBarMap;

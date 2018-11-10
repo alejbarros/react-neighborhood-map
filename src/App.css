@@ -103,9 +103,7 @@ input::placeholder {
   border:none;
   color:white;
 }
-@media screen and(max-width:768px){
-  .header-nav{display:none}
-}
+
 
 /* ====================== SIDEBAR ==================== */
 .places{
@@ -152,11 +150,17 @@ input::placeholder {
   justify-content: center;
   align-items: center;
 }
+
+@media screen and(min-width:769px){
+  .side-nav li{
+    padding:13px 10px 13px 0;
+  }
+}
 @media screen and(min-width:1500px){
   .side-nav li{
     padding:17px 10px 17px 0;
   }
-  }
+}
 
 .box{
   display:flex;
@@ -217,13 +221,4 @@ input::placeholder {
 }
 .angle-right:hover{
   color:rgb(80, 80, 80) !important;
-}
-/* ====================== SIDEBAR ==================== */
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

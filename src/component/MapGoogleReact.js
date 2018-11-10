@@ -53,13 +53,13 @@ class MapGoogleReact extends React.Component {
   render() {
     return (
        <div>
-        <BarMap
+          <BarMap
                 updateQuery={this.updateQuery}
                 query={this.state.query}
                 locationsMap={this.props.locationsMap}
                 openInfo={this.props.openInfo}
                 close={this.props.close} />
-        <div id={this.props.id} />
+          <div id={this.props.id} role="application"/>
         </div>
 
     );

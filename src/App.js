@@ -88,6 +88,7 @@ class App extends Component {
 
     render() {
         return (
+           <div className="App">
               <MapGoogleReact id="myMap"
                locationsMap={this.state.locationsMap}
                optionsMap={this.state.optionsMap}
@@ -95,6 +96,7 @@ class App extends Component {
                openInfo={this.open_info}
                close={this.close_info}
                />
+            </div>
 
         );
     }
