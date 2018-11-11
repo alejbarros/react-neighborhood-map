@@ -20,7 +20,7 @@ The project react-neighborhood-map is the application show different favorites p
 * install all project dependencies with `npm install`
 * start the development server with `npm start`
 
-* important
+# Important
 
 Create React App provide a full working service worker. To show it in action you must run the application in production build mode. To do that, run npm run build to create a buil version of the app and then serve -s buid to serve the production build in localhost.
 
